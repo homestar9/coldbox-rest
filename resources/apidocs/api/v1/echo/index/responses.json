@@ -4,29 +4,20 @@
         "content": {
             "application/json": {
                 "schema": {
-                    "type": "object",
-                    "properties": {
-                        "error": {
-                            "description": "Flag to indicate an error.",
-                            "type": "boolean"
+                    "$allOf": [
+                        {
+                            "$ref": "../../_schemas/app-response.json"
                         },
-                        "messages": {
-                            "description": "An array of messages related to the request.",
-                            "type": "array",
-                            "items": {
-                                "type": "string"
-                            }
-						},
-						"pagination" : {
-							"description": "Pagination information.",
+                        {
                             "type": "object",
-                            "properties": {}
-						},
-                        "data": {
-                            "description": "The welcome message",
-                            "type": "string"
+                            "properties": {
+                                "data": {
+                                    "description": "The welcome message",
+                                    "type": "string"
+                                }
+                            }
                         }
-                    }
+                    ]
 				},
 				"example": {
 					"$ref": "example.200.json"
