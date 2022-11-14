@@ -1,0 +1,14 @@
+{
+    "web":{
+        "rewrites":{
+            "enable":true
+        },
+        "allowedExt":"webmanifest",
+        "HTTP":{
+            "port":62480
+        }
+    },
+    "app":{
+        "cfengine":"adobe@2018"
+    }
+}

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+        {
+            "path": "modules_app/api/modules_app/v1/"
+        },
+        {
+            "path": "resources/apidocs/"
+        }
+    ],
+    "settings": {
+        "cflint.enabled": false
+    }
+}
